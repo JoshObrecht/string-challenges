@@ -8,13 +8,14 @@ public class StringChallenges
 			{
 				do
 					{
-				System.out.println("Which challenge would you like to run?");
-				System.out.println("");
-				System.out.println("1) Use Your Inside Voice");
-				System.out.println("2) Print Vertical Text");
-				System.out.println("3) Count The Vowels");
-				System.out.println("");
-				System.out.println("Type the number that corresponds with your choice.");
+				System.out.println("Which challenge would you like to run? "
+						+ "\n \n"
+						+ "1) Use Your Inside Voice \n"
+						+ "2) Print Vertical Text \n"
+						+ "3) Count The Vowels "
+						+ "\n \n"
+						+ "Type the number that corresponds with your choice.");
+				
 				
 				int userChoice = userInput2.nextInt();
 				switch(userChoice)
@@ -34,7 +35,7 @@ public class StringChallenges
 				}
 				runAgain();
 			}
-			while(playAgain==true);
+			while(playAgain);
 			}
 
 
@@ -91,7 +92,7 @@ public class StringChallenges
 				System.out.println("");
 				System.out.println("Would you like to run another challenge? (Type y/n for yes/no respectively)");
 				String userChoice= userInput.nextLine();
-				if((userChoice.equals("N"))||(userChoice.equals("n")))
+				if((userChoice.equalsIgnoreCase("n")))
 				{
 				System.out.println("See you later!");
 				playAgain=false;
