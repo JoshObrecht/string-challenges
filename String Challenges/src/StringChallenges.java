@@ -66,17 +66,9 @@ public class StringChallenges
 					switch(userString.substring(i, i+1).toLowerCase())
 					{
 						case "a":
-							vowels=vowels+1;
-							break;
 						case "e":
-							vowels=vowels+1;
-							break;
-						case ("i"):
-							vowels=vowels+1;
-							break;
+						case "i":
 						case "o":
-							vowels=vowels+1;
-							break;
 						case "u":
 							vowels=vowels+1;
 							break;
